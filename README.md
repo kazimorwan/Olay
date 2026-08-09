@@ -70,6 +70,33 @@ export default heroui();
 
 ---
 
+### 🎞️ Animation Note
+
+This project uses AOS-style animation attributes such as `data-aos="fade-up"` for scroll-based reveal effects.
+
+Install AOS:
+
+```bash
+npm install aos
+```
+
+Import it in your main file:
+
+```jsx
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+```
+
+Example usage:
+
+```jsx
+<section data-aos="fade-up">Content</section>
+```
+
+---
+
 ## 4️⃣ Add HeroUI styles to Tailwind (Tailwind v4 method)
 
 Update your `src/index.css` and add this line **after** Tailwind directives:
@@ -99,7 +126,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <HeroUIProvider>
       <App />
     </HeroUIProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 ```
 

@@ -17,6 +17,7 @@
   --breakpoint-901px: 56.3125rem;
   --breakpoint-1160px: 73rem;
   --animate-scroll: scroll 30s linear infinite;
+  --inset-shadow-md: inset 5px 5px 20px -10px #b4aeb6, inset -5px -4px 20px -10px #8f8a91; 
 
   @keyframes scroll {
     to {

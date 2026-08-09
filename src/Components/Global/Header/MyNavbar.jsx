@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import navLinkItems from "../../../db/dbExport";
 import MyButton from "../MyButton";
 import NavDrawer from "./NavDrawer";
-import Hamburger from "../Icons/Hamburger.jsx";
-import XMark from "../Icons/XMark.jsx";
+import MenuIcon from "../Icons/MenuIcon.jsx";
 
 // Images
 import logo from "../../../assets/img/logo.webp";
+import XIcon from "../Icons/XIcon.jsx";
 
 const MyNavbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -47,7 +47,7 @@ const MyNavbar = () => {
         </NavbarContent>
       </NavbarContent>
       <NavbarContent className="sm:hidden" justify="end">
-        <NavbarMenuToggle onClick={onOpen} className="text-white w-10 cursor-pointer" icon={isOpen ? XMark : Hamburger} />
+        <NavbarMenuToggle onClick={onOpen} className="text-white w-10 cursor-pointer" icon={isOpen ? XIcon : MenuIcon} />
         <NavDrawer isOpen={isOpen} onOpenChange={onOpenChange} />
       </NavbarContent>
     </Navbar>
