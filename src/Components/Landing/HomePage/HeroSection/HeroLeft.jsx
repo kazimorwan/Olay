@@ -16,7 +16,7 @@ const HeroL = () => {
         <MyButton className="px-7" url="/shop">
           Shop Now
         </MyButton>
-        <MyButton className="bg-white text-black active:translate-0 border-2 px-7 active:scale-95" classNameDiv2="hidden" url="/learn">
+        <MyButton className="bg-white text-black active:translate-0 border-2 px-7 active:scale-95 shadow-none" url="/learn">
           Learn More
         </MyButton>
       </div>

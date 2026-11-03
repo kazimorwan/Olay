@@ -28,8 +28,8 @@ const Login = () => {
   };
 
   return (
-    <section className="h-screen flex flex-col items-center justify-center bg-radial-[at_50%_25%] from-0% from-[#af0a11] to-100% to-[#4d0000] px-6 md:px-10 ">
-      <form onSubmit={formSubmit} className="bg-black text-white w-full max-w-[400px] text-center rounded-3xl px-6 py-10 shadow-2xl inset-shadow-md">
+    <section className="h-screen flex flex-col items-center justify-center bg-radial-[at_50%_25%] from-0% from-[#af0a11] to-100% to-[#4d0000] px-6 md:px-10">
+      <form onSubmit={formSubmit} className="bg-black text-white w-full max-w-[400px] text-center rounded-3xl px-6 py-10 shadow-2xl inset-shadow-md" data-aos="zoom-in">
         <h2 className="text-4xl mb-10 font-bold">Login</h2>
         <div className="flex items-center bg-[#120d0d] h-10 mb-5 rounded-sm">
           <div className="size-10 min-w-10 p-2 bg-[#3b3636] relative rounded-s-sm">
@@ -68,16 +68,16 @@ const Login = () => {
             {showPass ? <EyeIcon /> : <EyeSlashIcon />}
           </button>
         </div>
-        <div className="flex justify-between py-3 mt-3 underline">
+        <div className="flex justify-between py-3 mt-3 underline underline-offset-3">
           <Link to="resetPass">Forgot Password?</Link>
           <Link to="/signup">Signup</Link>
         </div>
 
         <div className="flex items-center justify-center gap-5 mt-5">
-          <button type="button" onClick={() => navigate("/")} className="bg-black text-white border-2 px-10 py-2 cursor-pointer">
+          <button type="button" onClick={() => navigate("/")} className="bg-black text-white border-2 px-10 py-2 cursor-pointer rounded-lg">
             Back
           </button>
-          <button type="submit" className="bg-white hover:bg-gray-200 text-black border-2 border-white px-10 py-2 cursor-pointer transition font-medium">
+          <button type="submit" className="bg-white hover:bg-gray-200 text-black border-2 border-white px-10 py-2 cursor-pointer transition font-medium rounded-lg">
             Login
           </button>
         </div>

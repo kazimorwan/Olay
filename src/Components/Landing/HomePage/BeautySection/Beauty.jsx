@@ -23,7 +23,7 @@ const Beauty = () => {
             <strong className="font-bold"> over $400</strong> in hydration — without breaking your budget.
           </p>
 
-          <MyButton classNameDiv2="bg-CRed" url="/learn">
+          <MyButton className="active:translate-0 active:scale-95" url="/learn">
             Know More
           </MyButton>
         </div>
